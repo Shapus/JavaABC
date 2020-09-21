@@ -31,8 +31,7 @@ public class App {
         char_user_str = user_str.toCharArray();
         
         for(int i=0;i<alphabet.length;i++){
-            if(user_str.indexOf(alphabet[i]) != -1) continue;
-            else{
+            if(user_str.indexOf(alphabet[i]) == -1){
                 char[] not_in_str_buff = new char[not_in_str.length+1];
                 for(int j=0;j<not_in_str.length;j++){
                     not_in_str_buff[j] = not_in_str[j];
